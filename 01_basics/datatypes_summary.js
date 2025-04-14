@@ -43,6 +43,32 @@ console.log(typeof myObj); // object
 console.log(typeof userEmail); // undefined
 
 
+//****************************************** */
+
+// Stack (Primitive) , Heap( Non-Primitive)
+
+let myYoutubename = "sakshisrivastavdotcom"
+
+let anothername = myYoutubename
+anothername = "sakshicode"
+
+console.log(myYoutubename);
+console.log(anothername);
+  
+
+let userOne = {
+    email: "sakshisrivastav262@gmail.com",
+    upi: "user@ybl"
+}
+  
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
 
 
 
