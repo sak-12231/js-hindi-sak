@@ -52,7 +52,7 @@ let str3 = str1 + str2
 //console.log("1" + 2 + 2);
 //console.log(1 + 2 + "2");
 
-//console/log( (3 + 4) * 5 % 3);
+//console.log( (3 + 4) * 5 % 3);
 
 //console.log(+true);
 //console.log(+"");
@@ -62,6 +62,10 @@ let str3 = str1 + str2
  let gamecounter = 1000
  ++gamecounter;
  console.log(gamecounter);
+
+   let x = 3
+   const y = ++x
+   console.log("x");
 
 
 

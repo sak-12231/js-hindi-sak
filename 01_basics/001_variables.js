@@ -6,12 +6,11 @@ accountCity = "Jaipur"
 
 //accountId = 2  //not allowed
 
-accountEmail = "sak19@gmail.com"
+accountEmail = "sak19@gmail.com" 
 accountPassword = "23456"
 accountCity = "Delhi"
 
 
-console.log(accountId);
 
 
 /*
