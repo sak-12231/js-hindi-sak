@@ -48,10 +48,43 @@
 ]
 
 users[1].email
-console.log(TinderUser);
+//console.log(TinderUser);
 
-console.log(Object.keys(TinderUser));
-console.log(Object.values(TinderUser));
-console.log(Object.entries(TinderUser));
+//console.log(Object.keys(TinderUser));
+//console.log(Object.values(TinderUser));
+//console.log(Object.entries(TinderUser));
 
-console.log(TinderUser.hasOwnProperty('isLogged'));
+//console.log(TinderUser.hasOwnProperty('isLogged'));
+
+const course = {
+    coursename:  "Js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+//course.courseInstructor
+
+
+const{courseInstructor} = course
+const{courseInstructor: Instructor} = course //when name is too long and give a short name ,then use this 
+
+console.log(courseInstructor);
+console.log(Instructor);  // this is called de-structure
+
+/* const navbar = ({company}) => {
+
+}
+
+navbar(company = "hitesh")*/  //It is a react de-structure
+
+/* {
+    "name": "hitesh",
+    "coursename": "js in hindi",
+    "price": "free"
+} */
+
+    [
+        {},
+        {},
+        {}
+    ]
