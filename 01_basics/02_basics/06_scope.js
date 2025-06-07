@@ -54,7 +54,7 @@ function addone(num1){     // it is function
 
 //addone(5)
 
-addTwo(5)
+addTwo(5 )
 const addTwo = function(num){    // it is expression
     return num + 2
 }
