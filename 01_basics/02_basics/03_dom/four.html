@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai or Code | DOM</title>
+ </head>
+ <body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+
+    
+ </body>
+ <script>
+    function addLanguage(langName){
+      const li = document.createElement('li');        // this is first method to add value and
+        li.innerHTML = `${langName}`                       // transverse the tree
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("typescript")
+
+    function  addOptiLanguage(langName){
+        const li = document.createElement('li');       // this is second method to add value and not to 
+        li.appendChild(document.createTextNode(langName))                    //   transverse the tree
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("golang")
+
+    // Edit 
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    console.log(secondLang);
+    // secondLang.innerHTML = "Mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"                            //  this is the reference to replace new value
+    secondLang.replaceWith(newli)
+
+
+    // edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>typescript</li>'
+
+    // remove
+
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+
+
+
+ </script>
+ </html>
