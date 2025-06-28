@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML events</title>
+ </head>
+ <body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="tree" src="https://images.pexels.com/photos/53435/tree-oak-landscape-view-53435.jpeg" alt="tree"></li>
+            <li> <img width="200px" id="nature" src="https://images.pexels.com/photos/220762/pexels-photo-220762.jpeg" alt=""></li>
+            <li><img width="200px" id="river"  src="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg" alt=""></li>
+            <li><img width="200px" id="flower" src="https://images.pexels.com/photos/68507/spring-flowers-flowers-collage-floral-68507.jpeg" alt="" onclick="alert('river')"></li>
+            <li><img width="200px" id="cat" src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg" alt=""> </li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+    
+ </body>
+ <script>
+   // document.getElementById('river').onclick = function(){
+     //   alert("river clicked")
+    // }
+
+    //attachEvent
+    //jQuery- on
+
+    // type, timestamp, defaultPrevented
+    // target, srcElement, toElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keycode
+
+   // document.getElementById('images').addEventListener('click', function(e){
+     //   console.log("clicked inside ul");
+        
+    // }, false)
+
+    // document.getElementById('river').addEventListener('click', function(e){
+     //   console.log("river clicked");
+     //   e.stopPropagation()
+        
+    // }, false)
+
+    // document.getElementById('google').addEventListener('click',function(e){
+       // console.log("google clicked");
+       // e.preventDefault()
+       // e.stopPropagation()
+   // }, false)
+
+   document.querySelector('#images').addEventListener('click', function(e){
+       console.log(e.target.tagName);
+       if(e.target.tagName=== 'IMG'){
+        condole.log(e.target.id);
+        let removeIt = e.target.parentNode
+       removeIt.remove()
+       }
+   })
+
+   // removeIt.parentNode.removeChild(removeIt)
+
+    
+
+ </script>
+
+ </html>
